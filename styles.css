@@ -1,0 +1,164 @@
+body {
+    background-color: #d8d8e2;
+} 
+
+li {
+    font-family: Playfair Display, serif;
+    text-decoration: none;
+    display: list-item;
+    list-style-type: "+ ";
+}
+
+h1, h2, h4{
+    font-family: Gloock, serif;
+    color: rgb(45, 46, 57);
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: rgb(45, 46, 57)
+}
+
+a:hover{
+    color: rgb(148, 149, 187);
+    transition: 0.5s;
+}
+
+.page{
+    padding-bottom: 100px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.header-items{
+    font-family: Playfair Display, serif;
+    padding-right: 35px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Playfair Display, serif;
+    padding: 25px;
+}
+
+.pfp{
+    height: 250px;
+    width: auto;
+    border-radius: 100% 100%;
+}
+
+.text{
+    width: 300px;
+    padding: 50px;
+}
+
+.resume-grid-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.resume-grid{
+    display: grid;
+    width: 750px;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding: 1px;
+}
+
+.grid-item{
+    padding-left: 25px;
+}
+
+#education{
+    grid-row: 1;
+}
+
+#experience{
+    grid-row: 3;
+}
+
+#skills {
+    grid-row: 3;
+}
+
+/*------ABOUT---------*/
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-bottom: 25vw;
+
+  }
+  
+.background{
+    position: relative;
+    height: 55vw;
+    width:100%;
+    opacity: 0.98;
+    background-image:url(hero\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 95vw auto;
+    z-index: 2;
+    animation: parallax linear;
+    animation-timeline: scroll();
+}
+  
+  @keyframes parallax{
+    to{
+      transform: translateY(300px);
+    }
+  }
+  
+.bg_cloud{
+    position: absolute;
+    z-index: 3;
+    height: 20vw;
+    width: 100%;
+    margin-bottom: -15px;
+    background-image: url(bgcloud.png);
+    background-position: bottom;
+    background-size: 100vw auto;
+    animation: parallax2 linear;
+    animation-timeline: scroll();
+}
+  
+  @keyframes parallax2 {
+    to{
+      transform: translateY(300px);
+    }
+  }
+  
+.title {
+    position: absolute;
+    z-index: 1;
+    font-family: "Noto Serif Display", serif;
+    font-size: 15vw;
+    font-style: normal;
+    padding-bottom: 175px;
+    letter-spacing: 20px;
+    color: rgb(45, 46, 57);
+}
+
+.info{
+    position: static;
+    height: 1000px;
+    width: 100%;
+    background-color: #131b30;
+    margin-top: -250px;
+    padding-top: 300px;
+    padding-left: 50px;
+}
+  
+.about-me-vers{
+    color: #d8d8e2;
+}
