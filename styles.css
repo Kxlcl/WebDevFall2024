@@ -45,6 +45,11 @@ a:hover{
     align-items: center;
     font-family: Playfair Display, serif;
     padding: 25px;
+
+    @media (max-width: 500px){
+        flex-direction: column;
+
+    }
 }
 
 .pfp{
@@ -61,6 +66,9 @@ a:hover{
 .resume-grid-wrapper{
     display: flex;
     justify-content: center;
+    @media (max-width: 500px){
+        flex-direction: row;
+    }
 }
 
 .resume-grid{
@@ -68,7 +76,6 @@ a:hover{
     width: 750px;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
-    padding: 1px;
 }
 
 .grid-item{
@@ -86,5 +93,3 @@ a:hover{
 #skills {
     grid-row: 3;
 }
-
-/*------ABOUT---------*/
