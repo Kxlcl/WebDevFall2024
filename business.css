@@ -1,36 +1,76 @@
-.hero-container{
-    height: 100vh;
+
+
+.hero{
+    height: 125vh;
     width: auto;
     background-image: url(cafe.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background: rgba(0,0,0,0.5);
+    opacity: 0.5;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hero{
-    width: 100%;
-    height: auto;
+.title{
+    font-family: "Protest Strike", sans-serif;
+    font-size: 100px;
+    position: absolute;
+    z-index: 10;
+    padding-top: 24vh;
+    padding-left: 50px;
+    width: 50%;
+    color: #1c1d21;
+}
+
+.tiers-title{
+    font-family: "Protest Strike", sans-serif;
+    text-align: center;
+    background-color: #f5d3bf;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.hero-desc{
+    font-family: "Space Grotesk", serif;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 150px;
+    text-align: center;
+    background-color: #eb9f71;
+    height: 50vh;
 }
 
 .tiers{
     display: flex;
     justify-content: center;
     padding: 50px;
-}
-
-.title{
-    text-align: center;
-    font-family: "Protest Strike", sans-serif;
-    font-size: 100px;
-    position: absolute;
-    
+    background-color: #f5d3bf;
 }
 
 .card{
     padding: 10px;
     margin: 10px;
 }
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.card-text, card-title{
+    font-family: "Space Grotesk", serif;
+}
+
+.sauce, sauce::after{
+    text-decoration: none;
+    color: #1c1d21;
+    text-align: center;
+    background-color: #eb9f71;
+    padding: 10px;
+    border-radius: 20px;
+}
+
