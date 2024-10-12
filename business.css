@@ -1,0 +1,36 @@
+.hero-container{
+    height: 100vh;
+    width: auto;
+    background-image: url(cafe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero{
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.tiers{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.title{
+    text-align: center;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 100px;
+    position: absolute;
+    
+}
+
+.card{
+    padding: 10px;
+    margin: 10px;
+}
