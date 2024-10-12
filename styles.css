@@ -1,0 +1,145 @@
+body {
+    background-color: #d8d8e2;
+} 
+
+li {
+    font-family: Playfair Display, serif;
+    text-decoration: none;
+    display: list-item;
+    list-style-type: "+ ";
+}
+
+h1, h2, h4{
+    font-family: Gloock, serif;
+    color: rgb(45, 46, 57);
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: rgb(45, 46, 57)
+}
+
+a:hover{
+    color: rgb(148, 149, 187);
+    transition: 0.5s;
+}
+
+.page{
+    padding-bottom: 100px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.header-items{
+    font-family: Playfair Display, serif;
+    padding-right: 35px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Playfair Display, serif;
+    padding: 25px;
+
+    @media (max-width: 500px){
+        flex-direction: column;
+
+    }
+}
+
+.pfp{
+    height: 250px;
+    width: auto;
+    border-radius: 100% 100%;
+    float: left;
+}
+
+.text{
+    width: 300px;
+    padding: 50px;
+}
+
+.resume-grid-wrapper{
+    display: flex;
+    justify-content: center;
+    @media (max-width: 500px){
+        flex-direction: row;
+    }
+}
+
+.resume-grid{
+    display: grid;
+    width: 750px;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.grid-item{
+    padding-left: 25px;
+}
+
+#education{
+    grid-row: 1;
+}
+
+#experience{
+    grid-row: 3;
+}
+
+#skills {
+    grid-row: 3;
+}
+
+
+.project_item{
+    display: flex;
+    background-color: #b1bac7;
+    height: 300px;
+    width: 75%;
+    min-width: 300px;
+    max-width: 1200px;
+    padding: 40px 0px 0px 30px;
+    margin: 0px 10vw 25px 10vw;
+    border-radius: 10px;
+}
+
+.item_title{
+    width: 25%;
+    font-family: Gloock, serif;
+    font-size: 55px;
+    line-height: 50px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.title_wrapper{
+    width: 50%;
+}
+
+.tags{
+    display: flex;
+    font-family: Gloock, serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: #cad0d9;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+    width: 125px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_image{
+    height: 100%;
+    width: auto;
+    border-radius: 10px 10px 0 0;
+    box-shadow: #32313f 5px 0px 20px;
+    margin-right: 25px;
+}
